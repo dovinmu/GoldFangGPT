@@ -13,7 +13,7 @@ models = {
     'paragraph-summary': 'gpt-4'
 }
 MODEL = "gpt-3.5-turbo"
-def query_openai(prompt: str, prompt_system: str, model = "default", max_tokens=2000, debug=False, temp=1):
+def query_openai(prompt: str, prompt_system: str, model = "default", max_tokens=500, debug=False, temp=0.8):
     # March 17, 2023 version
     if model == "default":
         model = MODEL
